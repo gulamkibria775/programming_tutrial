@@ -10,6 +10,7 @@ import TermsAndConditions from "../../Pages/Others/TermsAndContions/TermsAndCond
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Course from "../../component/Course";
 import Checkout from "../../component/Checkout";
+import NotFound from "../../component/NotFound";
 
 export const routes = createBrowserRouter([
     {
@@ -62,6 +63,10 @@ export const routes = createBrowserRouter([
                 path: '/course',
                 element:<Course></Course>,
                 loader: () => fetch('http://localhost:5000/course')
+            },
+            {
+             path:'/*', 
+            element:<NotFound></NotFound>,
             }
         ]
     }
