@@ -9,6 +9,7 @@ import Profile from "../../Pages/Others/Profile/Profile";
 import TermsAndConditions from "../../Pages/Others/TermsAndContions/TermsAndConditions";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Course from "../../component/Course";
+import Checkout from "../../component/Checkout";
 
 export const routes = createBrowserRouter([
     {
@@ -33,8 +34,13 @@ export const routes = createBrowserRouter([
             // },
             {
                 path: '/category/:id',
-                element: <PrivateRoute><News></News></PrivateRoute>,
+                element: <News></News>,
                 loader: ({params}) => fetch(`http://localhost:5000/course/${params.id}`)
+            },
+            {
+                path: '/checkout/:id',
+                element: <PrivateRoute><Checkout></Checkout></PrivateRoute>,
+                loader:({params}) => fetch(`http://localhost:5000/course/${params.id}`)
             },
             {
                 path: '/login',
