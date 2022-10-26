@@ -11,6 +11,8 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Course from "../../component/Course";
 import Checkout from "../../component/Checkout";
 import NotFound from "../../component/NotFound";
+import Blog from "../../component/Blog/Blog"
+import Faq from "../../component/FAQ/Faq"
 
 export const routes = createBrowserRouter([
     {
@@ -22,6 +24,10 @@ export const routes = createBrowserRouter([
                 element: <Home></Home>,
              
                 loader: () => fetch('http://localhost:5000/course')
+            },
+            {
+                path: '/home',
+                element: <Home></Home>,
             },
             // {
             //     path: '/category/:id',
@@ -67,6 +73,14 @@ export const routes = createBrowserRouter([
             {
              path:'/*', 
             element:<NotFound></NotFound>,
+            },
+            {
+                path:'/blog',
+                element:<Blog></Blog>
+            },
+            {
+                path:'/faq',
+                element:<Faq></Faq>
             }
         ]
     }
