@@ -10,7 +10,11 @@ const Main = () => {
     return (
         <div>
             <Header></Header>
+            
+            <RightSideNav></RightSideNav>
+                    
             <Container>
+           
                 {/* <Row>
                     <Col lg="2" className='d-none d-lg-block'>
                         <LeftSideNav></LeftSideNav>
@@ -18,6 +22,7 @@ const Main = () => {
                     <Col lg="10">
                         <Outlet></Outlet>
                     </Col>
+                  
                    
                 {/* </Row> */}
             </Container>
