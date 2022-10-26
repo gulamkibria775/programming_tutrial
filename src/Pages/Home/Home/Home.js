@@ -15,7 +15,7 @@ const Home = () => {
 
  <div className='container '>
      <Carousel className='slider'>
-      <Carousel.Item className='slider'>
+      <Carousel.Item>
         <img
           className="d-block img-home"
           src="https://img.freepik.com/free-photo/book-with-green-board-background_1150-3836.jpg?w=2000"

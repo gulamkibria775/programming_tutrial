@@ -5,6 +5,8 @@
     grid-gap: 5px;
     margin-left: 20px;
     width: 120%;
+    margin-top: 100px;
+    float: right;
 }
 .couse-layout{
     display: grid;
