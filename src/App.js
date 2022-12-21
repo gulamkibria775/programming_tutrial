@@ -25,7 +25,7 @@ function App() {
       <GlobalStyles/>
     <StyledApp>
     <div>
-    <button onClick={() =>themeToggler()}>change-color</button>
+    <button className='text-black' onClick={() =>themeToggler()}>change-color</button>
       
       <RouterProvider router={routes}></RouterProvider>
       <Toaster></Toaster>

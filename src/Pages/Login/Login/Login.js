@@ -26,7 +26,8 @@ const Login = () => {
                 console.log(user);
                 form.reset();
                 setError('');
-                if(user.emailVerified){
+                // user.emailVerified
+                if(true){
                     navigate(from, {replace: true});
                 }
                 else{
@@ -36,6 +37,7 @@ const Login = () => {
             .catch(error => {
                 console.error(error)
                 setError(error.message);
+                toast.error('Email or Password is wrong')
             })
             .finally(() => {
                 setLoading(false);

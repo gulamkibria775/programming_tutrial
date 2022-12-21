@@ -32,6 +32,7 @@ const Register = () => {
             .catch(e => {
                 console.error(e);
                 setError(e.message);
+                toast.success('Email or Password not correted')
             });
     }
 

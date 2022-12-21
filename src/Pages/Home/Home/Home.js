@@ -5,6 +5,8 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Accordion from 'react-bootstrap/Accordion';
+import Button from 'react-bootstrap/Button';
+
 // import { useLoaderData } from 'react-router-dom';
 // import NewsSummaryCard from '../../Shared/NewsSummaryCard/NewsSummaryCard';
 import './home.css'
@@ -22,7 +24,7 @@ const Home = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h3><Button variant="danger" className='px-3'>Sumit</Button></h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -34,7 +36,7 @@ const Home = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
+          <h3><Button variant="danger" className='px-3'>Sumit</Button></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -46,7 +48,7 @@ const Home = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3><Button variant="danger" className='px-3'>Sumit</Button></h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
@@ -60,7 +62,7 @@ const Home = () => {
           <Card className='ms-5'>
             <Card.Img variant="top" src="https://media.istockphoto.com/photos/smiling-student-guy-preparing-for-exam-at-school-picture-id1278973857?k=20&m=1278973857&s=612x612&w=0&h=RyyHHeipXbyb80hhUmHknqKoQNkL9FDJSOV1gm4s7H4=" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>Good Facilities Provider</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -76,9 +78,9 @@ const Home = () => {
       {Array.from({ length: 2}).map((_, idx) => (
         <Col>
           <Card className='ms-5'>
-            <Card.Img variant="top" src="https://thumbs.dreamstime.com/b/happy-female-graduate-student-mortarboard-education-graduation-people-concept-bachelor-gown-136594403.jpg" />
+            <Card.Img variant="top" src="https://media.istockphoto.com/photos/small-school-girl-sitting-at-the-desk-in-classroom-looking-at-camera-picture-id1173363595?b=1&k=20&m=1173363595&s=170667a&w=0&h=jk_xs0z87JzVO2_F6RqMs64OziEjxY1ONUQolNv_YoI=" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>Good Environment</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -92,7 +94,7 @@ const Home = () => {
 
     <Accordion defaultActiveKey="0" flush className='w-100 my-5 py-3'>
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Header>Accordion Item one</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -104,7 +106,7 @@ const Home = () => {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Header>Accordion Item two</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

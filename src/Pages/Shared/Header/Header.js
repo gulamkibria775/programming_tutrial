@@ -3,7 +3,7 @@ import { Image } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import { FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
@@ -26,12 +26,12 @@ const Header = () => {
         <Navbar collapseOnSelect className='mb-4' expand="lg" bg="light" variant="light">
             <Container>
                 <img className='logo-img ' src="https://i.pinimg.com/originals/8e/f8/55/8ef855f46702650f9c4f529d537d7d97.jpg" alt=""  />
-                <Navbar.Brand><Link to='/'>Programming Tutrial</Link></Navbar.Brand>
+                <Navbar.Brand><Link to='/' className='text-danger text-decc'>Programming Tutrial</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                     <Nav.Link href="/home">Home</Nav.Link>
-                        <Nav.Link href="/course">course</Nav.Link>
+                        <Nav.Link href="/course">Course</Nav.Link>
                         <Nav.Link href="/faq">FAQ</Nav.Link>
                         <Nav.Link href="/blog">Blog</Nav.Link>
                         {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
@@ -56,8 +56,8 @@ const Header = () => {
                                     </>
                                     :
                                     <>
-                                        <Link to='/login'>Login</Link>
-                                        <Link to='/register'>Register</Link>
+                                        <Link to='/login' className='me-2 text-decc'>Login</Link>
+                                        <Link to='/register' className=' me-2 text-decc'>Register</Link>
                                     </>
                             }
 

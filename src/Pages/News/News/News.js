@@ -7,9 +7,31 @@ import './Teacher.css'
 const News = () => {
     const news = useLoaderData();
     const { title, details, image_url, category_id,rating,total_view,teacher} = news;
+
+    const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch('details').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'SamplePDF.pdf';
+                alink.click();
+            })
+        })
+    }
+
+
+
+
+
     return (
-        <Card>
-            <h3 className='m-1 p-1 bg-info'>Header</h3>
+        <Card className='news-top'>
+            <h3 className='m-1 p-3 bg-info '><button onClick={onButtonClick}>
+                    Download PDF
+                </button></h3>
             <Card.Img className='card-img' variant="top" src={image_url} />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
