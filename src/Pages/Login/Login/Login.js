@@ -26,7 +26,7 @@ const Login = () => {
                 console.log(user);
                 form.reset();
                 setError('');
-                // user.emailVerified
+                
                 if(true){
                     navigate(from, {replace: true});
                 }

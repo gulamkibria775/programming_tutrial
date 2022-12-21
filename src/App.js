@@ -6,7 +6,7 @@ import { useState } from 'react';
 import styled ,{ ThemeProvider } from 'styled-components';
 
 import {lightTheme,darkTheme,GlobalStyles} from './Appbar/Appbar';
-// import { light } from '@material-ui/core/styles/createPalette';
+
 
 
 

@@ -29,16 +29,7 @@ export const routes = createBrowserRouter([
                 path: '/home',
                 element: <Home></Home>,
             },
-            // {
-            //     path: '/category/:id',
-            //     element: <Category></Category>,
-            //     loader: ({params}) => fetch(`http://localhost:5000/course/${params.id}`)
-            // },
-            // {
-            //     path: '/news/:id',
-            //     element: <PrivateRoute><News></News></PrivateRoute>,
-            //     loader: ({params}) => fetch(`https://dragon-news-server-seven.vercel.app/news/${params.id}`)
-            // },
+           
             {
                 path: '/category/:id',
                 element: <News></News>,
